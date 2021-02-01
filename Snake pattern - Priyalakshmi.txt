@@ -13,7 +13,7 @@ using namespace std;
 int
 main ()
 {
-  int size, space, num, i, rnum;
+  int size, space, num, i;
   num = 1;
   cin >> size;
   space = size-1;
@@ -23,7 +23,7 @@ main ()
 	{
 	  std::cout << " ";
 	}
-      for (i = 0; i <= size; i++)
+      for (i = 0; i <size; i++)
 	{
 	  cout << num;
 	  num++;
@@ -33,13 +33,11 @@ main ()
 	{
 	  std::cout << " ";
 	}
-      for (i = 0; i < 5; i++)
+	num = num + size;
+      for (i = num; i >num-size; i--)
 	{
-	  rnum = num + 5;
-	  cout << rnum;
-	  rnum--;
+	  cout << i;
 	}
-      num += 5;
       space--;
     }
     return 0;
